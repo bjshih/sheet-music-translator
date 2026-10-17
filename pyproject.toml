@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheet-music-translator"
+version = "1.0.0"
+description = "AI Audio-to-LeadSheet Pipeline with Accompaniment Beat-Grid, Scale Gravity, and Closed-Loop Verification"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "SheetMusicTranslator Contributors" }
+]
+keywords = [
+    "music-transcription",
+    "lead-sheet",
+    "audio-to-score",
+    "musicxml",
+    "crepe",
+    "demucs",
+    "whisper",
+    "musescore",
+    "music-information-retrieval"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchaudio>=2.0.0",
+    "soundfile>=0.12.1",
+    "numpy>=1.23.5",
+    "scipy>=1.10.0",
+    "librosa>=0.10.1",
+    "pretty_midi>=0.2.10",
+    "demucs>=4.0.1",
+    "torchcrepe>=0.0.22",
+    "openai-whisper>=20231117",
+    "music21>=9.1.0"
+]
+
+[project.scripts]
+sheet-music-translator = "translator.cli:main"

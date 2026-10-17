@@ -1,0 +1,21 @@
+# Core Audio and Deep Learning
+torch>=2.0.0
+torchaudio>=2.0.0
+soundfile>=0.12.1
+numpy>=1.23.5
+scipy>=1.10.0
+librosa>=0.10.1
+pretty_midi>=0.2.10
+
+# AI Stem Separation & Neural Pitch Tracking
+demucs>=4.0.1
+torchcrepe>=0.0.22
+openai-whisper>=20231117
+
+# Music Theory & MusicXML Composition
+music21>=9.1.0
+
+# Note on compatibility:
+# torchcrepe depends on resampy which requires pkg_resources.
+# Keep setuptools pinned below 70.0.0:
+setuptools<70.0.0

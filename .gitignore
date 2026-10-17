@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Audio / Temp files
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+_temp_demucs/
+preview_*.png
+
+# Except sample / test files in examples/
+!examples/**/*.wav
+!examples/**/*.mp3
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
